@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans	
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop.xsd ">
+
+	<!-- bean definition & AOP specific configuration -->
+	<aop:config>
+		<aop:aspect id="myRepositoryAspect" ref="repositoryAspect">
+			<aop:pointcut id="repositoryAspectPointCut"
+				expression="execution(* br.com.makersweb.web.repository.*.save(..))" />
+			<aop:around pointcut-ref="repositoryAspectPointCut"
+				method="doBasicDomainInformation" />
+		</aop:aspect>
+	</aop:config>
+
+
+	<!-- Definition for dao aspect -->
+
+	<bean id="repositoryAspect" class="br.com.makersweb.web.aspect.RepositoryAspect" />
+
+</beans>
