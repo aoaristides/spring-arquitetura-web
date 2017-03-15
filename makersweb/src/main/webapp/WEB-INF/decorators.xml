@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<decorators defaultdir="/template">
+    <decorator name="plain" page="plain.jsp">
+        <pattern>*plain*</pattern>
+    </decorator>     
+    <decorator name="page" page="default.jsp">
+        <pattern>*page*</pattern>
+    </decorator>  
+    <decorator name="none" page="none.jsp">
+        <pattern>*none*</pattern>
+    </decorator>  
+</decorators>

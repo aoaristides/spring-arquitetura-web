@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body> 
+Olá, <b>$name</b> ! <br>
+Esse é um e-mail de testes para verificar se está funcionando o envio corretamente.<br><br>
+
+Se você recebeu esse e-mail é porque tudo esta configurado corretamente.<br>
+Meus Parabéns!
+
+<br><br>
+
+Equipe MakersWeb<br>
+suporte@makersweb.com.br
+</body>
+</html>

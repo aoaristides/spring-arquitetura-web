@@ -1,0 +1,41 @@
+/*
+ * CSS padrão do MakersWeb
+ * Created on : 15/02/2017, 15:15:33
+ * Author     : Anderson O.Aristides
+*/
+/***********************************
+############## LOGIN ###############
+***********************************/
+#form-container {
+    width: 100vw;
+    height: 100vh;
+    background: #2d353c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#form-box {
+    width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#form-box input {
+    font-size: large;
+}
+
+/***********************************
+############## DASHBOARD ###############
+***********************************/
+.trigger_ajax {
+	cursor: pointer;
+}
+.form_load {
+	width: 25px;
+	margin-top: -2px;
+}
+.ds_none, .none {
+	display: none;
+}
