@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="dec"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title><dec:title /></title>
-		<meta name="description" content="MakersWeb Description"/>
-		<meta name="robots" content="index, follow"/>
-		<meta name="makersweb_version" content="<spring:message code="makersweb.api.version" />" />
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../_cdn/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../_cdn/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../_cdn/css/font-awesome.min.css" />
 		
 		<!-- CSS Base Sistema -->
-		<link rel="stylesheet" href="../_cdn/vendors/_css/makersweb.css" />
-		<link rel="stylesheet" href="../_cdn/vendors/_css/application.css" />
+		<link rel="stylesheet" href="../_cdn/vendors/css/makersweb.css" />
+		<link rel="stylesheet" href="../_cdn/vendors/css/application.css" />
 		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,16 +24,30 @@
 		<![endif]-->
 	</head>
 	<body>
-		<jsp:include page="header.jsp" />
+	
+		<div class="aw-layout-loading  js-loading-overlay">
+			<div class="aw-layout-loading__container">
+				<span class="aw-balls-spinner">Carregando...</span>
+			</div>
+		</div>
+	
+		<div class="aw-layout-page">
 		
-		<div class="container">
-			<dec:body />
-		</div> <!-- /container -->
+			<jsp:include page="header.jsp" />
+			
+			<jsp:include page="menu.jsp" />
+			
+			<section class="aw-layout-content  js-content">
+				<dec:body />
+			</section>
+			
+			<jsp:include page="footer.jsp" />
 		
-		<!-- Bootstrap core JavaScript -->
+		</div><!-- /aw-layout-page -->
+		
+		<!-- Bootstrap Scripts -->
 		<script src="../_cdn/js/jquery.js"></script>
 		<script src="../_cdn/js/bootstrap.min.js"></script>
-		<script src="../_cdn/vendors/js/makersweb-config.js"></script>
-		<script src="../_cdn/vendors/js/controller/makersweb-controller.js"></script>
+		<script src="../_cdn/vendors/js/makersweb.js"></script>
 	</body>
 </html>

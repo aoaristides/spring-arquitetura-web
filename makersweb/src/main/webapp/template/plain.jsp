@@ -10,6 +10,7 @@
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../_cdn/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../_cdn/css/bootstrap-theme.min.css" />
 		
 		<!-- CSS Base Sistema -->
 		<link rel="stylesheet" href="../_cdn/vendors/css/makersweb.css" />
