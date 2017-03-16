@@ -22,6 +22,8 @@
 		<intercept-url pattern="/*/regra-acesso-admin*" access="hasRole('ADMIN')" />
 		<intercept-url pattern="/*/usuario-admin*" access="hasRole('ADMIN')" />
 		<intercept-url pattern="/*/perfil-admin*" access="hasRole('ADMIN')" />
+		
+		<intercept-url pattern="/_cdn/**" access="permitAll()" />
 
 	</http>
 

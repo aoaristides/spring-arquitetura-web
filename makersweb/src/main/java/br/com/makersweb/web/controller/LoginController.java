@@ -16,8 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class LoginController {
 	
 	private static String GO_LOGIN = "login";
-	private static String GO_RECOVER = "recuperar";
-	private static String GO_CREATE = "cadastro";
+	private static String GO_RECOVER = "esqueceu-a-senha";
+	private static String GO_CREATE = "novo-usuario";
 
 	@RequestMapping(value = "login.html")
 	public ModelAndView login() {
@@ -33,7 +33,7 @@ public class LoginController {
 		return mav;
 	}
 
-	@RequestMapping(value = "cadastro.html")
+	@RequestMapping(value = "novo-usuario.html")
 	public ModelAndView cadastro() {
 		ModelAndView mav = new ModelAndView(GO_CREATE);
 
