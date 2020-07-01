@@ -18,7 +18,7 @@
 		<org.slf4j.version>1.7.22</org.slf4j.version>
 		<java.compiler.version>1.8</java.compiler.version>
 		<maven.compiler.version>3.6.1</maven.compiler.version>
-		<mysql.connector.version>5.1.40</mysql.connector.version>
+		<mysql.connector.version>8.0.16</mysql.connector.version>
 		<org.hibernate.version>5.2.6.Final</org.hibernate.version>
 		<org.hibernate.validator.version>5.4.0.Final</org.hibernate.validator.version>
 		<opensymphony.sitemesh.version>2.4.2</opensymphony.sitemesh.version>
